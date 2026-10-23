@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-23T10:59:49+00:00",
+  "generated": "2026-10-23T11:41:17+00:00",
   "source": {
     "agents": "/Users/hackerboy/ultimate-agency/agency/registry/agents.json",
     "skills": "/Users/hackerboy/ultimate-agency/agency/registry/skills.json",
@@ -9,10 +9,10 @@
   "stats": {
     "agents": 20,
     "skills": 21,
-    "projects": 5,
-    "notes": 16,
-    "nodes": 61,
-    "edges": 204
+    "projects": 6,
+    "notes": 17,
+    "nodes": 63,
+    "edges": 236
   },
   "layers": {
     "agent": "Canonical role that owns or reviews work",
@@ -51,7 +51,7 @@
           "ai-cli-mastery"
         ]
       },
-      "degree": 5
+      "degree": 6
     },
     {
       "id": "agent:critic",
@@ -73,7 +73,7 @@
           "agent-evals-security"
         ]
       },
-      "degree": 6
+      "degree": 7
     },
     {
       "id": "agent:agent-platform-engineer",
@@ -99,7 +99,7 @@
           "security-gate"
         ]
       },
-      "degree": 5
+      "degree": 6
     },
     {
       "id": "agent:backend-engineer",
@@ -121,7 +121,7 @@
           "cloud-worker"
         ]
       },
-      "degree": 4
+      "degree": 5
     },
     {
       "id": "agent:chief-of-staff",
@@ -143,7 +143,7 @@
           "knowledge-system"
         ]
       },
-      "degree": 3
+      "degree": 4
     },
     {
       "id": "agent:design-director",
@@ -170,7 +170,7 @@
           "ghost-cursor"
         ]
       },
-      "degree": 8
+      "degree": 9
     },
     {
       "id": "agent:design-technologist",
@@ -197,7 +197,7 @@
           "ghost-cursor"
         ]
       },
-      "degree": 9
+      "degree": 10
     },
     {
       "id": "agent:conductor",
@@ -226,7 +226,7 @@
           "agent-evals-security"
         ]
       },
-      "degree": 7
+      "degree": 8
     },
     {
       "id": "agent:frontend-engineer",
@@ -254,7 +254,7 @@
           "ghost-cursor"
         ]
       },
-      "degree": 10
+      "degree": 11
     },
     {
       "id": "agent:growth-creative-technologist",
@@ -279,7 +279,7 @@
           "research-synthesis"
         ]
       },
-      "degree": 2
+      "degree": 3
     },
     {
       "id": "agent:knowledge-architect",
@@ -301,7 +301,7 @@
           "memory-protocol"
         ]
       },
-      "degree": 4
+      "degree": 5
     },
     {
       "id": "agent:memory-curator",
@@ -322,7 +322,7 @@
           "knowledge-system"
         ]
       },
-      "degree": 5
+      "degree": 6
     },
     {
       "id": "agent:architect",
@@ -345,7 +345,7 @@
           "ai-cli-mastery"
         ]
       },
-      "degree": 5
+      "degree": 6
     },
     {
       "id": "agent:product-strategist",
@@ -367,7 +367,7 @@
           "visual-aesthetics"
         ]
       },
-      "degree": 2
+      "degree": 3
     },
     {
       "id": "agent:qa-engineer",
@@ -393,7 +393,7 @@
           "ghost-cursor"
         ]
       },
-      "degree": 10
+      "degree": 11
     },
     {
       "id": "agent:recon-engineer",
@@ -420,7 +420,7 @@
           "playwright-recording"
         ]
       },
-      "degree": 9
+      "degree": 10
     },
     {
       "id": "agent:research-director",
@@ -443,7 +443,7 @@
           "ai-cli-mastery"
         ]
       },
-      "degree": 3
+      "degree": 4
     },
     {
       "id": "agent:sre-cloud",
@@ -465,7 +465,7 @@
           "agent-evals-security"
         ]
       },
-      "degree": 5
+      "degree": 6
     },
     {
       "id": "agent:security-engineer",
@@ -485,7 +485,7 @@
           "agent-evals-security"
         ]
       },
-      "degree": 4
+      "degree": 5
     },
     {
       "id": "agent:token-governor",
@@ -505,7 +505,7 @@
           "token-budget"
         ]
       },
-      "degree": 2
+      "degree": 3
     },
     {
       "id": "note:daily/2026/2026-10-22",
@@ -650,6 +650,22 @@
       },
       "body": "\n# Aoricreative private replay\n\nPrivate, technical replay of `aoricreative.com` for parity work. Not a public deployment.\n\n## Evidence\n\n- Capture: **316 responses / 156 objects / 9.63 MiB**, 0 errors.\n- Parity: **28/28 states**, average **0.059%** changed pixels, max **0.661%**, text equal 28/28.\n- Integrity: `tools/validate_build.py aoricreative` passes.\n- Private repo: `https://github.com/sarvashwa/aoricreative-replay`.\n\n## Constraints\n\n- Captured bytes are gitignored.\n- No public deploy without ownership/permission.\n- Cloud preview is temporary; password lives outside the repo.\n- Known deltas: canvas/video/GPU rendering and dynamic timing.\n\n## Open\n\n- WCAG and reduced-motion audit.\n- Mobile/tablet pixel parity.\n- Rollback/runbook and independent security sign-off.\n- CI integrity job.",
       "degree": 3
+    },
+    {
+      "id": "note:projects/foundry-system-design/_project",
+      "label": "FOUNDRY \u2014 System Design Studio",
+      "type": "note",
+      "subtype": "project",
+      "description": "Working name **FOUNDRY** (\"Design it. Break it. Prove it.\"). A Prism-class interactive system design platform that closes the loop the market leaves open: concept \u2192 build \u2192 break \u2192 diagnose \u2192 fix \u2192 prove mastery.",
+      "meta": {
+        "path": "projects/foundry-system-design/_project.md",
+        "status": "planning",
+        "date": "2026-10-23",
+        "scope": "project:foundry-system-design",
+        "confidence": "1.0"
+      },
+      "body": "\n# FOUNDRY \u2014 System Design Studio\n\nWorking name **FOUNDRY** (\"Design it. Break it. Prove it.\"). A Prism-class interactive\nsystem design platform that closes the loop the market leaves open:\nconcept \u2192 build \u2192 break \u2192 diagnose \u2192 fix \u2192 prove mastery.\n\n## Frame (complete as of 2026-10-23)\n\n- Product spec, 12-phase curriculum (~70 modules / ~180 concepts), 120-question bank\n  generated from `data/questions.json`, simulator spec, architecture, design system,\n  roadmap with exit gates, 20 agent briefs, sourced bibliography.\n- Reference product studied: `prismhld.com` (canvas + traffic simulation + five-axis\n  rubric + AI interview). We copy structure, not assets or prose.\n\n## Decisions\n\n- Deterministic discrete-event simulation in a Web Worker; score must be a pure\n  function of `(design, scenario, seed)`.\n- Rubric evidence must cite telemetry; a design that misses its SLO cannot score high.\n- AI examiner is rubric-constrained and grounded, never a free-form reviewer.\n- Content is machine-readable first, rendered second.\n\n## Open\n\n- Vertical slice (canvas + one scenario + telemetry scoring) not built yet.\n- 40 full worked solutions still to author.\n- Persistent \"default product bar\" policy needs to be referenced by runtime adapters\n  (`scripts/agency sync`) so it loads in every CLI.\n",
+      "degree": 1
     },
     {
       "id": "note:inbox/_inbox",
@@ -800,6 +816,18 @@
       "degree": 18
     },
     {
+      "id": "project:foundry-system-design",
+      "label": "FOUNDRY System Design Studio",
+      "type": "project",
+      "subtype": "planning",
+      "description": "Prism-class interactive system design platform: prerequisite-ordered curriculum, 120-question bank, deterministic simulator, evidence-based rubric, portfolio.",
+      "meta": {
+        "status": "planning",
+        "id": "foundry-system-design"
+      },
+      "degree": 32
+    },
+    {
       "id": "project:knowledge",
       "label": "Knowledge Base",
       "type": "project",
@@ -834,7 +862,7 @@
         "status": "active",
         "path": "skills/agency-capability-atlas/SKILL.md"
       },
-      "degree": 2
+      "degree": 3
     },
     {
       "id": "skill:agent-evals-security",
@@ -847,7 +875,7 @@
         "status": "active",
         "path": "skills/agent-evals-security/SKILL.md"
       },
-      "degree": 14
+      "degree": 15
     },
     {
       "id": "skill:agent-orchestration",
@@ -860,7 +888,7 @@
         "status": "active",
         "path": "skills/agent-orchestration/SKILL.md"
       },
-      "degree": 8
+      "degree": 9
     },
     {
       "id": "skill:ai-cli-mastery",
@@ -886,7 +914,7 @@
         "status": "active",
         "path": "skills/cloud-worker/SKILL.md"
       },
-      "degree": 5
+      "degree": 6
     },
     {
       "id": "skill:deep-capture",
@@ -912,7 +940,7 @@
         "status": "active",
         "path": "skills/design-toolchain/SKILL.md"
       },
-      "degree": 13
+      "degree": 14
     },
     {
       "id": "skill:ghost-cursor",
@@ -938,7 +966,7 @@
         "status": "active",
         "path": "skills/knowledge-system/SKILL.md"
       },
-      "degree": 7
+      "degree": 8
     },
     {
       "id": "skill:marketing-ai-toolchain",
@@ -964,7 +992,7 @@
         "status": "active",
         "path": "skills/memory-protocol/SKILL.md"
       },
-      "degree": 7
+      "degree": 8
     },
     {
       "id": "skill:pixel-parity",
@@ -1016,7 +1044,7 @@
         "status": "active",
         "path": "skills/security-gate/SKILL.md"
       },
-      "degree": 14
+      "degree": 15
     },
     {
       "id": "skill:site-replication",
@@ -1042,7 +1070,7 @@
         "status": "active",
         "path": "skills/token-budget/SKILL.md"
       },
-      "degree": 6
+      "degree": 7
     },
     {
       "id": "skill:vibe-coding-protocol",
@@ -1055,7 +1083,7 @@
         "status": "active",
         "path": "skills/vibe-coding-protocol/SKILL.md"
       },
-      "degree": 2
+      "degree": 3
     },
     {
       "id": "skill:visual-aesthetics",
@@ -1068,7 +1096,7 @@
         "status": "active",
         "path": "skills/visual-aesthetics/SKILL.md"
       },
-      "degree": 10
+      "degree": 11
     },
     {
       "id": "skill:visual-replica",
@@ -1496,6 +1524,198 @@
     {
       "source": "note:projects/analogue-studio-replica/_project",
       "target": "project:analogue-studio-replica",
+      "type": "documents",
+      "weight": 0.7
+    },
+    {
+      "source": "agent:conductor",
+      "target": "project:foundry-system-design",
+      "type": "works_on",
+      "weight": 0.9
+    },
+    {
+      "source": "agent:product-strategist",
+      "target": "project:foundry-system-design",
+      "type": "works_on",
+      "weight": 0.9
+    },
+    {
+      "source": "agent:architect",
+      "target": "project:foundry-system-design",
+      "type": "works_on",
+      "weight": 0.9
+    },
+    {
+      "source": "agent:research-director",
+      "target": "project:foundry-system-design",
+      "type": "works_on",
+      "weight": 0.9
+    },
+    {
+      "source": "agent:recon-engineer",
+      "target": "project:foundry-system-design",
+      "type": "works_on",
+      "weight": 0.9
+    },
+    {
+      "source": "agent:design-director",
+      "target": "project:foundry-system-design",
+      "type": "works_on",
+      "weight": 0.9
+    },
+    {
+      "source": "agent:design-technologist",
+      "target": "project:foundry-system-design",
+      "type": "works_on",
+      "weight": 0.9
+    },
+    {
+      "source": "agent:frontend-engineer",
+      "target": "project:foundry-system-design",
+      "type": "works_on",
+      "weight": 0.9
+    },
+    {
+      "source": "agent:backend-engineer",
+      "target": "project:foundry-system-design",
+      "type": "works_on",
+      "weight": 0.9
+    },
+    {
+      "source": "agent:ai-engineer",
+      "target": "project:foundry-system-design",
+      "type": "works_on",
+      "weight": 0.9
+    },
+    {
+      "source": "agent:agent-platform-engineer",
+      "target": "project:foundry-system-design",
+      "type": "works_on",
+      "weight": 0.9
+    },
+    {
+      "source": "agent:security-engineer",
+      "target": "project:foundry-system-design",
+      "type": "works_on",
+      "weight": 0.9
+    },
+    {
+      "source": "agent:sre-cloud",
+      "target": "project:foundry-system-design",
+      "type": "works_on",
+      "weight": 0.9
+    },
+    {
+      "source": "agent:qa-engineer",
+      "target": "project:foundry-system-design",
+      "type": "works_on",
+      "weight": 0.9
+    },
+    {
+      "source": "agent:critic",
+      "target": "project:foundry-system-design",
+      "type": "works_on",
+      "weight": 0.9
+    },
+    {
+      "source": "agent:chief-of-staff",
+      "target": "project:foundry-system-design",
+      "type": "works_on",
+      "weight": 0.9
+    },
+    {
+      "source": "agent:knowledge-architect",
+      "target": "project:foundry-system-design",
+      "type": "works_on",
+      "weight": 0.9
+    },
+    {
+      "source": "agent:memory-curator",
+      "target": "project:foundry-system-design",
+      "type": "works_on",
+      "weight": 0.9
+    },
+    {
+      "source": "agent:growth-creative-technologist",
+      "target": "project:foundry-system-design",
+      "type": "works_on",
+      "weight": 0.9
+    },
+    {
+      "source": "agent:token-governor",
+      "target": "project:foundry-system-design",
+      "type": "works_on",
+      "weight": 0.9
+    },
+    {
+      "source": "skill:agency-capability-atlas",
+      "target": "project:foundry-system-design",
+      "type": "supports",
+      "weight": 0.8
+    },
+    {
+      "source": "skill:agent-orchestration",
+      "target": "project:foundry-system-design",
+      "type": "supports",
+      "weight": 0.8
+    },
+    {
+      "source": "skill:agent-evals-security",
+      "target": "project:foundry-system-design",
+      "type": "supports",
+      "weight": 0.8
+    },
+    {
+      "source": "skill:design-toolchain",
+      "target": "project:foundry-system-design",
+      "type": "supports",
+      "weight": 0.8
+    },
+    {
+      "source": "skill:visual-aesthetics",
+      "target": "project:foundry-system-design",
+      "type": "supports",
+      "weight": 0.8
+    },
+    {
+      "source": "skill:knowledge-system",
+      "target": "project:foundry-system-design",
+      "type": "supports",
+      "weight": 0.8
+    },
+    {
+      "source": "skill:memory-protocol",
+      "target": "project:foundry-system-design",
+      "type": "supports",
+      "weight": 0.8
+    },
+    {
+      "source": "skill:security-gate",
+      "target": "project:foundry-system-design",
+      "type": "supports",
+      "weight": 0.8
+    },
+    {
+      "source": "skill:token-budget",
+      "target": "project:foundry-system-design",
+      "type": "supports",
+      "weight": 0.8
+    },
+    {
+      "source": "skill:vibe-coding-protocol",
+      "target": "project:foundry-system-design",
+      "type": "supports",
+      "weight": 0.8
+    },
+    {
+      "source": "skill:cloud-worker",
+      "target": "project:foundry-system-design",
+      "type": "supports",
+      "weight": 0.8
+    },
+    {
+      "source": "note:projects/foundry-system-design/_project",
+      "target": "project:foundry-system-design",
       "type": "documents",
       "weight": 0.7
     },
