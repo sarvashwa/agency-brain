@@ -1,5 +1,5 @@
 window.AGENCY_GRAPH = {
-  "generated": "2026-10-22T22:28:22+00:00",
+  "generated": "2026-10-23T10:59:49+00:00",
   "source": {
     "agents": "/Users/hackerboy/ultimate-agency/agency/registry/agents.json",
     "skills": "/Users/hackerboy/ultimate-agency/agency/registry/skills.json",
@@ -9,10 +9,10 @@ window.AGENCY_GRAPH = {
   "stats": {
     "agents": 20,
     "skills": 21,
-    "projects": 4,
-    "notes": 15,
-    "nodes": 59,
-    "edges": 193
+    "projects": 5,
+    "notes": 16,
+    "nodes": 61,
+    "edges": 204
   },
   "layers": {
     "agent": "Canonical role that owns or reviews work",
@@ -73,7 +73,7 @@ window.AGENCY_GRAPH = {
           "agent-evals-security"
         ]
       },
-      "degree": 5
+      "degree": 6
     },
     {
       "id": "agent:agent-platform-engineer",
@@ -197,7 +197,7 @@ window.AGENCY_GRAPH = {
           "ghost-cursor"
         ]
       },
-      "degree": 8
+      "degree": 9
     },
     {
       "id": "agent:conductor",
@@ -254,7 +254,7 @@ window.AGENCY_GRAPH = {
           "ghost-cursor"
         ]
       },
-      "degree": 9
+      "degree": 10
     },
     {
       "id": "agent:growth-creative-technologist",
@@ -393,7 +393,7 @@ window.AGENCY_GRAPH = {
           "ghost-cursor"
         ]
       },
-      "degree": 9
+      "degree": 10
     },
     {
       "id": "agent:recon-engineer",
@@ -420,7 +420,7 @@ window.AGENCY_GRAPH = {
           "playwright-recording"
         ]
       },
-      "degree": 8
+      "degree": 9
     },
     {
       "id": "agent:research-director",
@@ -620,6 +620,22 @@ window.AGENCY_GRAPH = {
       "degree": 3
     },
     {
+      "id": "note:projects/analogue-studio-replica/_project",
+      "label": "Analogue Studio replica",
+      "type": "note",
+      "subtype": "project",
+      "description": "Offline replica of madebyanalogue.co.uk/studio/ built from a deterministic capture, used for parity work. Design and media belong to Analogue Studio; the repository stays private.",
+      "meta": {
+        "path": "projects/analogue-studio-replica/_project.md",
+        "status": "active",
+        "date": "2026-10-23",
+        "scope": "project:analogue-studio-replica",
+        "confidence": "1.0"
+      },
+      "body": "\n# Analogue Studio replica\n\nOffline replica of `madebyanalogue.co.uk/studio/` built from a deterministic\ncapture, used for parity work. Design and media belong to Analogue Studio; the\nrepository stays private.\n\n## Evidence\n\n- Capture: **109 assets / 12.3 MB**, 20 hover states, 1 console error.\n- Replica: **523 mapped assets**, ES-module game graph wired, media localized.\n- Parity: worst pixel diff **3.52%** (threshold 12%), text match **97.57%**,\n  asset resolution **100%**, 0 page/console errors at 1440x900 and 390x844.\n- Private repo: `https://github.com/sarvashwa/analogue-studio-replica`.\n\n## Known deltas\n\n- Animation phase only: marquee offset, GIF frame, draggable hero stickers.\n- The 172 MB `studio.mp4` tour streams from origin; everything else is local.\n- Firebase leaderboard runs without remote sync.\n\n## Open\n\n- Mobile pixel parity (layout verified, pixels not measured).\n- Replace the remaining remote video with a compressed local derivative.\n",
+      "degree": 2
+    },
+    {
       "id": "note:projects/aoricreative/_project",
       "label": "Aoricreative private replay",
       "type": "note",
@@ -760,6 +776,18 @@ window.AGENCY_GRAPH = {
       "degree": 23
     },
     {
+      "id": "project:analogue-studio-replica",
+      "label": "Analogue Studio Replica",
+      "type": "project",
+      "subtype": "active",
+      "description": "Offline replica of madebyanalogue.co.uk/studio/ with deterministic capture, parity evidence, and localized media.",
+      "meta": {
+        "status": "active",
+        "id": "analogue-studio-replica"
+      },
+      "degree": 10
+    },
+    {
       "id": "project:aoricreative",
       "label": "Aoricreative Replay",
       "type": "project",
@@ -884,7 +912,7 @@ window.AGENCY_GRAPH = {
         "status": "active",
         "path": "skills/design-toolchain/SKILL.md"
       },
-      "degree": 12
+      "degree": 13
     },
     {
       "id": "skill:ghost-cursor",
@@ -949,7 +977,7 @@ window.AGENCY_GRAPH = {
         "status": "active",
         "path": "skills/pixel-parity/SKILL.md"
       },
-      "degree": 15
+      "degree": 17
     },
     {
       "id": "skill:playwright-recording",
@@ -988,7 +1016,7 @@ window.AGENCY_GRAPH = {
         "status": "active",
         "path": "skills/security-gate/SKILL.md"
       },
-      "degree": 13
+      "degree": 14
     },
     {
       "id": "skill:site-replication",
@@ -1001,7 +1029,7 @@ window.AGENCY_GRAPH = {
         "status": "active",
         "path": "skills/site-replication/SKILL.md"
       },
-      "degree": 11
+      "degree": 12
     },
     {
       "id": "skill:token-budget",
@@ -1408,6 +1436,66 @@ window.AGENCY_GRAPH = {
     {
       "source": "note:daily/2026/2026-10-22",
       "target": "project:knowledge",
+      "type": "documents",
+      "weight": 0.7
+    },
+    {
+      "source": "agent:recon-engineer",
+      "target": "project:analogue-studio-replica",
+      "type": "works_on",
+      "weight": 0.9
+    },
+    {
+      "source": "agent:frontend-engineer",
+      "target": "project:analogue-studio-replica",
+      "type": "works_on",
+      "weight": 0.9
+    },
+    {
+      "source": "agent:design-technologist",
+      "target": "project:analogue-studio-replica",
+      "type": "works_on",
+      "weight": 0.9
+    },
+    {
+      "source": "agent:qa-engineer",
+      "target": "project:analogue-studio-replica",
+      "type": "works_on",
+      "weight": 0.9
+    },
+    {
+      "source": "agent:critic",
+      "target": "project:analogue-studio-replica",
+      "type": "works_on",
+      "weight": 0.9
+    },
+    {
+      "source": "skill:site-replication",
+      "target": "project:analogue-studio-replica",
+      "type": "supports",
+      "weight": 0.8
+    },
+    {
+      "source": "skill:pixel-parity",
+      "target": "project:analogue-studio-replica",
+      "type": "supports",
+      "weight": 0.8
+    },
+    {
+      "source": "skill:design-toolchain",
+      "target": "project:analogue-studio-replica",
+      "type": "supports",
+      "weight": 0.8
+    },
+    {
+      "source": "skill:security-gate",
+      "target": "project:analogue-studio-replica",
+      "type": "supports",
+      "weight": 0.8
+    },
+    {
+      "source": "note:projects/analogue-studio-replica/_project",
+      "target": "project:analogue-studio-replica",
       "type": "documents",
       "weight": 0.7
     },
@@ -2008,6 +2096,12 @@ window.AGENCY_GRAPH = {
     {
       "source": "note:projects/agency-os/state/2026-10-22-snapshot",
       "target": "agent:conductor",
+      "type": "mentions",
+      "weight": 0.35
+    },
+    {
+      "source": "note:projects/analogue-studio-replica/_project",
+      "target": "skill:pixel-parity",
       "type": "mentions",
       "weight": 0.35
     },
