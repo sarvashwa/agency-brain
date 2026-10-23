@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="dark" />
+  <title>Agency Brain — FRIDAY</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%230b111d'/%3E%3Ccircle cx='16' cy='16' r='5' fill='%235eead4'/%3E%3Ccircle cx='7' cy='9' r='2' fill='%23f472b6'/%3E%3Ccircle cx='25' cy='9' r='2' fill='%23fbbf24'/%3E%3Ccircle cx='9' cy='24' r='2' fill='%2393c5fd'/%3E%3Ccircle cx='23' cy='24' r='2' fill='%235eead4'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="topbar">
+      <div class="brand">
+        <div class="mark" aria-hidden="true">
+          <span></span><span></span><span></span><span></span><span></span>
+        </div>
+        <div>
+          <h1>Agency Brain</h1>
+          <p>Agents · skills · projects · knowledge</p>
+        </div>
+      </div>
+
+      <label class="search">
+        <span class="search-icon">⌕</span>
+        <input id="search" type="search" placeholder="Search the agency graph…" autocomplete="off" spellcheck="false" />
+        <kbd>/</kbd>
+      </label>
+
+      <div class="status-pill" title="Static client, cloud-first"><span class="pulse"></span>Live graph</div>
+
+      <div class="top-stats" id="top-stats" aria-live="polite"></div>
+    </header>
+
+    <aside class="sidebar">
+      <section class="panel">
+        <div class="panel-head">
+          <h2>Layers</h2>
+          <button id="all-layers" class="text-btn" type="button">all</button>
+        </div>
+        <div class="layer-list" id="layer-list"></div>
+      </section>
+
+      <section class="panel">
+        <div class="panel-head"><h2>Relations</h2></div>
+        <div class="legend" id="edge-legend"></div>
+        <p class="micro">Direction is semantic: agent → skill, agent → project, note → project. Hover an edge type to isolate it.</p>
+      </section>
+
+      <section class="panel">
+        <div class="panel-head"><h2>Projects</h2></div>
+        <div class="project-list" id="project-list"></div>
+      </section>
+
+      <section class="panel cloud-note">
+        <div class="cloud-badge">CLOUD-FIRST</div>
+        <p>Static client. No local model; inference stays on cloud.</p>
+        <p class="micro">Truth: registry + <code>~/agency-kb</code>. Basic Memory is a rebuildable index.</p>
+      </section>
+    </aside>
+
+    <main class="stage">
+      <svg id="graph" role="img" aria-label="Interactive map of agents, skills, projects, and knowledge notes"></svg>
+      <div class="stage-hint" id="hint">
+        <span>Drag to pan</span><span class="sep">·</span>
+        <span>Scroll to zoom</span><span class="sep">·</span>
+        <span>Click to inspect</span><span class="sep">·</span>
+        <span><kbd>/</kbd> search</span>
+      </div>
+      <div class="stage-controls">
+        <button id="zoom-in" type="button" title="Zoom in" aria-label="Zoom in">+</button>
+        <button id="zoom-out" type="button" title="Zoom out" aria-label="Zoom out">−</button>
+        <button id="fit" type="button" title="Fit graph" aria-label="Fit graph">⌂</button>
+      </div>
+      <div class="tooltip" id="tooltip" role="status"></div>
+    </main>
+
+    <aside class="inspector" id="inspector">
+      <div class="inspector-empty">
+        <div class="orb" aria-hidden="true"></div>
+        <h2>Select a node</h2>
+        <p>Start with a project to see the team and skills around it, or search for an agent.</p>
+        <div class="quick" id="quick-links"></div>
+      </div>
+    </aside>
+  </div>
+
+  <script src="vendor/d3.v7.min.js"></script>
+  <script src="graph.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
